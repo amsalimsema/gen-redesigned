@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Landing from './Landing';
 import Make from './Make';
 import Product from './Product';
+import Subscribe from './Subscribe';
 import Testimonial from './Testimonial';
 import Why from './Why';
 
@@ -32,8 +33,8 @@ export default function Nav() {
         <NavWrap>
           <NavItem href='/#products'>PRODUCTS</NavItem>
           <NavItem href='/#faq'>FAQs</NavItem>
-          <NavItem href='/fgg'>SHOP</NavItem>
-          <NavItem href='/#faq'>TALK TO US</NavItem>
+          <NavItem href='/shop'>SHOP</NavItem>
+          <NavItem href='/#contact'>TALK TO US</NavItem>
         </NavWrap>
       </Top>
       <Landing />
@@ -45,6 +46,9 @@ export default function Nav() {
       <Testimonial />
       <div id='faq'>
         <Faq />
+      </div>
+      <div id='contact'>
+        <Subscribe />
         <Footer />
       </div>
     </>

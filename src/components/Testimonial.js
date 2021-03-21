@@ -11,6 +11,7 @@ const Wrap = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.85rem;
 
   @media only screen and (max-width: 600px) {
     width: 80vw;

@@ -25,7 +25,11 @@ const ImgBox = styled.div`
   padding-bottom: 1rem;
   transform-origin: 0 0;
 `;
-const Info = styled.div``;
+const Info = styled.div`
+  @media only screen and (min-width: 1900px) {
+    margin-top: 5.5rem;
+  }
+`;
 const Tick = styled(FaCheckSquare)`
   color: #27af48;
 `;
