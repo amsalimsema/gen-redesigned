@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../images/logo.png';
 import Faq from './Faq';
 import Footer from './Footer';
 import Landing from './Landing';
+import Make from './Make';
 import Product from './Product';
+import Testimonial from './Testimonial';
+import Why from './Why';
 
 export default function Nav() {
   // change bg
@@ -21,20 +25,28 @@ export default function Nav() {
     <>
       <Top className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
         <Logo>
-          <img src={logo} alt='logo' style={{ width: '50px' }} />
+          <Link to='/'>
+            <img src={logo} alt='logo' style={{ width: '50px' }} />
+          </Link>
         </Logo>
         <NavWrap>
-          <NavItem href='#'>PRODUCTS</NavItem>
-          <NavItem href='#'>HOW TO USE</NavItem>
-          <NavItem href='#'>SHOP</NavItem>
-          <NavItem href='#'>TALK TO US</NavItem>
+          <NavItem href='/#products'>PRODUCTS</NavItem>
+          <NavItem href='/#faq'>FAQs</NavItem>
+          <NavItem href='/fgg'>SHOP</NavItem>
+          <NavItem href='/#faq'>TALK TO US</NavItem>
         </NavWrap>
       </Top>
       <Landing />
-
-      <Product />
-      <Faq />
-      <Footer />
+      <Why />
+      <div id='products'>
+        <Product />
+      </div>
+      <Make />
+      <Testimonial />
+      <div id='faq'>
+        <Faq />
+        <Footer />
+      </div>
     </>
   );
 }

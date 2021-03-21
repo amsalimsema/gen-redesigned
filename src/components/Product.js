@@ -33,11 +33,23 @@ const ImgOne = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  transform-origin: 0 0;
+  transition: transform 10s, visibility 10s ease-in;
+  &:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+  }
 `;
 const ImgTwo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  transform-origin: 0 0;
+  transition: transform 10s, visibility 10s ease-in;
+  &:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+  }
   @media only screen and (max-width: 600px) {
     justify-content: flex-start;
   }
@@ -70,7 +82,7 @@ export default function Product() {
         <WrapInner>
           <div className='py-5 text-center'>
             <img src={logo} alt='logo' style={{ width: '50px' }} />
-            <h3>100% organic</h3>
+            <h3 className='pt-1'>100% organic products</h3>
             <BsStarFill style={{ color: '#27af48' }} />
             <BsStarFill style={{ color: '#27af48' }} />
             <BsStarFill style={{ color: '#27af48' }} />
@@ -83,7 +95,7 @@ export default function Product() {
                 <p>Gen Shea Butter Creme</p>
               </Title>
               <ImgOne>
-                <img src={pdt} alt='product' />
+                <img src={pdt} alt='product' className='bg-white' />
               </ImgOne>
             </Col>
             <Col md={7}>
@@ -117,17 +129,8 @@ export default function Product() {
                     harum maxime dignissimos quia labore.
                   </p>
                 </Info>
-                <Title>
-                  <p>Ingredients:</p>
-                </Title>
-                <Info>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Corporis deleniti tempora consequatur nulla vero nihil harum
-                    maxime dignissimos quia labore.
-                  </p>
-                </Info>
-                <Title> Available in 250g and 350g</Title>
+
+                <Title> Available in 250ml and 350ml</Title>
                 <BtnBox>
                   <ShopBtn>
                     <small>Buy</small>
@@ -174,17 +177,8 @@ export default function Product() {
                     harum maxime dignissimos quia labore.
                   </p>
                 </Info>
-                <Title>
-                  <p>Ingredients:</p>
-                </Title>
-                <Info>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Corporis deleniti tempora consequatur nulla vero nihil harum
-                    maxime dignissimos quia labore.
-                  </p>
-                </Info>
-                <Title> Available in 250g and 350g</Title>
+
+                <Title> Available in 250ml and 350ml</Title>
                 <BtnBox>
                   <ShopBtn>
                     <small>Buy</small>
@@ -197,7 +191,7 @@ export default function Product() {
                 <p>Gen Shea Butter Creme</p>
               </TitleTwo>
               <ImgTwo>
-                <img src={pdt} alt='product' />
+                <img src={pdt} alt='product' className='bg-white' />
               </ImgTwo>
             </Col>
           </Row>

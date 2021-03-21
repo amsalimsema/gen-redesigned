@@ -74,3 +74,8 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   overflow: hidden;
 }
+
+/* testimonial */
+.carousel-indicators li {
+  background: transparent;
+}

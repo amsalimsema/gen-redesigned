@@ -16,6 +16,7 @@ export const ShopBtn = styled(Button)`
     color: inherit;
   }
 `;
+
 export const Dot = styled(BiDotsHorizontalRounded)`
   color: #27af48;
   font-size: 4rem;
