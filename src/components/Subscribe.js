@@ -45,14 +45,14 @@ export default function Subscribe() {
           noValidate
           validated={validated}
           onSubmit={handleSubmit}
-          name='anj_news'
+          name='newsletter'
           method='POST'
           data-netlify='true'
           action='/?success=true'
-          id='form_js_news'
+          id='newsletter_js'
           autoComplete='off'
         >
-          <input type='hidden' name='form-name' value='anj_news' />
+          <input type='hidden' name='form-name' value='newsletter' />
           <Form.Row>
             <Form.Group
               as={Col}

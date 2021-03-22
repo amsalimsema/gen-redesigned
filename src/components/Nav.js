@@ -2,14 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../images/logo.png';
-import Faq from './Faq';
-import Footer from './Footer';
-import Landing from './Landing';
-import Make from './Make';
-import Product from './Product';
-import Subscribe from './Subscribe';
-import Testimonial from './Testimonial';
-import Why from './Why';
 
 export default function Nav() {
   // change bg
@@ -37,20 +29,6 @@ export default function Nav() {
           <NavItem href='/#contact'>TALK TO US</NavItem>
         </NavWrap>
       </Top>
-      <Landing />
-      <Why />
-      <div id='products'>
-        <Product />
-      </div>
-      <Make />
-      <Testimonial />
-      <div id='faq'>
-        <Faq />
-      </div>
-      <div id='contact'>
-        <Subscribe />
-        <Footer />
-      </div>
     </>
   );
 }
