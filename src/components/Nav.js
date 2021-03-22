@@ -43,7 +43,8 @@ const Logo = styled.div`
 const Top = styled.div`
   position: fixed;
   width: 100vw;
-  z-index: 100;
+  z-index: 1000;
+  height: 100px;
 `;
 const NavWrap = styled.div`
   margin: 0.5rem auto;

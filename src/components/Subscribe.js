@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import { ShopBtn, BtnBox } from './Global';
+import { Btn, BtnBox } from './Global';
 
 const Wrap = styled(Container)`
   width: 30vw;
-  margin: 10rem auto;
+  margin: 4rem auto;
   text-align: center;
   @media only screen and (max-width: 600px) {
     width: 80vw;
@@ -48,9 +48,9 @@ export default function Subscribe() {
           name='newsletter'
           method='POST'
           data-netlify='true'
-          action='/?success=true'
+          action='/#contact/?success=true'
           id='newsletter_js'
-          autoComplete='off'
+          autoComplete='true'
         >
           <input type='hidden' name='form-name' value='newsletter' />
           <Form.Row>
@@ -73,9 +73,9 @@ export default function Subscribe() {
             </Form.Group>
           </Form.Row>
           <BtnBox>
-            <ShopBtn type='submit'>
+            <Btn type='submit'>
               <small>Subcribe</small>
-            </ShopBtn>
+            </Btn>
           </BtnBox>
         </Form>
       </Wrap>

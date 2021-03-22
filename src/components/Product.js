@@ -132,7 +132,7 @@ export default function Product() {
 
                 <Title> Available in 250ml and 350ml</Title>
                 <BtnBox>
-                  <ShopBtn>
+                  <ShopBtn to='/shop'>
                     <small>Buy</small>
                   </ShopBtn>
                 </BtnBox>
@@ -180,7 +180,7 @@ export default function Product() {
 
                 <Title> Available in 250ml and 350ml</Title>
                 <BtnBox>
-                  <ShopBtn>
+                  <ShopBtn to='/shop'>
                     <small>Buy</small>
                   </ShopBtn>
                 </BtnBox>
