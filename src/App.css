@@ -35,7 +35,6 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   background: rgb(0, 0, 0, 0.2);
   width: 100vw;
-  z-index: 1000;
 }
 .MobileNav.active {
   background: #27af48;
@@ -43,7 +42,6 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
   position: fixed;
   width: 100vw;
-  z-index: 1000;
 }
 
 /* faq */

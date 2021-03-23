@@ -16,8 +16,8 @@ export default function Nav() {
   window.addEventListener('scroll', changebackground);
   return (
     <>
-      <div className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
-        <Top>
+      <Top>
+        <div className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
           <Logo>
             <Link to='/'>
               <img src={logo} alt='logo' style={{ width: '50px' }} />
@@ -29,8 +29,8 @@ export default function Nav() {
             <NavItem href='/shop'>SHOP</NavItem>
             <NavItem href='/#contact'>TALK TO US</NavItem>
           </NavWrap>
-        </Top>
-      </div>
+        </div>
+      </Top>
     </>
   );
 }
@@ -43,9 +43,10 @@ const Logo = styled.div`
   margin-top: 0.3rem;
 `;
 const Top = styled.div`
-  position: absolute;
+  background: rgb(0, 0, 0, 0.3);
+  position: fixed;
   width: 100vw;
-  // z-index: 1000;
+  z-index: 1000;
   height: 100px;
 `;
 const NavWrap = styled.div`
