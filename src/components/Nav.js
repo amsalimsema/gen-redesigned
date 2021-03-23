@@ -7,7 +7,7 @@ export default function Nav() {
   // change bg
   const [MobileNav, setMobileNav] = useState(false);
   const changebackground = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 80) {
       setMobileNav(true);
     } else {
       setMobileNav(false);
@@ -16,19 +16,21 @@ export default function Nav() {
   window.addEventListener('scroll', changebackground);
   return (
     <>
-      <Top className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
-        <Logo>
-          <Link to='/'>
-            <img src={logo} alt='logo' style={{ width: '50px' }} />
-          </Link>
-        </Logo>
-        <NavWrap>
-          <NavItem href='/#products'>PRODUCTS</NavItem>
-          <NavItem href='/#faq'>FAQs</NavItem>
-          <NavItem href='/shop'>SHOP</NavItem>
-          <NavItem href='/#contact'>TALK TO US</NavItem>
-        </NavWrap>
-      </Top>
+      <div className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
+        <Top>
+          <Logo>
+            <Link to='/'>
+              <img src={logo} alt='logo' style={{ width: '50px' }} />
+            </Link>
+          </Logo>
+          <NavWrap>
+            <NavItem href='/#products'>PRODUCTS</NavItem>
+            <NavItem href='/#faq'>FAQs</NavItem>
+            <NavItem href='/shop'>SHOP</NavItem>
+            <NavItem href='/#contact'>TALK TO US</NavItem>
+          </NavWrap>
+        </Top>
+      </div>
     </>
   );
 }
@@ -41,10 +43,10 @@ const Logo = styled.div`
   margin-top: 0.3rem;
 `;
 const Top = styled.div`
-  position: fixed;
-  width: 100vw;
-  z-index: 1000;
-  height: 100px;
+  // position: fixed;
+  // width: 100vw;
+  // z-index: 1000;
+  // height: 100px;
 `;
 const NavWrap = styled.div`
   margin: 0.5rem auto;
