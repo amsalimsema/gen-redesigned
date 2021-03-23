@@ -37,9 +37,9 @@ export default function Nav() {
 
 // navigation
 const Logo = styled.div`
-  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 0.3rem;
 `;
 const Top = styled.div`
@@ -55,6 +55,7 @@ const NavWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 `;
 const NavItem = styled.a`
   font-size: 0.7rem;

@@ -33,15 +33,13 @@ body::-webkit-scrollbar-thumb {
 .MobileNav {
   height: 100px;
   position: fixed;
-  background: rgb(0, 0, 0, 0.2);
+  background: rgb(0, 0, 0, 0.3);
   width: 100vw;
+  z-index: 1000;
 }
 .MobileNav.active {
   background: #27af48;
   opacity: 90%;
-  height: 100px;
-  position: fixed;
-  width: 100vw;
 }
 
 /* faq */
