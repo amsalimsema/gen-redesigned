@@ -40,6 +40,10 @@ body::-webkit-scrollbar-thumb {
 .MobileNav.active {
   background: #27af48;
   opacity: 90%;
+  width: 100vw;
+  z-index: 1000;
+  height: 100px;
+  position: fixed;
 }
 
 /* faq */

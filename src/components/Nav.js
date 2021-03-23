@@ -16,21 +16,21 @@ export default function Nav() {
   window.addEventListener('scroll', changebackground);
   return (
     <>
-      <Top>
-        <div className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
-          <Logo>
-            <Link to='/'>
-              <img src={logo} alt='logo' style={{ width: '50px' }} />
-            </Link>
-          </Logo>
-          <NavWrap>
-            <NavItem href='/#products'>PRODUCTS</NavItem>
-            <NavItem href='/#faq'>FAQs</NavItem>
-            <NavItem href='/shop'>SHOP</NavItem>
-            <NavItem href='/#contact'>TALK TO US</NavItem>
-          </NavWrap>
-        </div>
-      </Top>
+      {/* <Top> */}
+      <div className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
+        <Logo>
+          <Link to='/'>
+            <img src={logo} alt='logo' style={{ width: '50px' }} />
+          </Link>
+        </Logo>
+        <NavWrap>
+          <NavItem href='/#products'>PRODUCTS</NavItem>
+          <NavItem href='/#faq'>FAQs</NavItem>
+          <NavItem href='/shop'>SHOP</NavItem>
+          <NavItem href='/#contact'>TALK TO US</NavItem>
+        </NavWrap>
+      </div>
+      {/* </Top> */}
     </>
   );
 }
@@ -42,13 +42,13 @@ const Logo = styled.div`
   text-align: center;
   margin-top: 0.3rem;
 `;
-const Top = styled.div`
-  background: rgb(0, 0, 0, 0.3);
-  position: fixed;
-  width: 100vw;
-  z-index: 1000;
-  height: 100px;
-`;
+// const Top = styled.div`
+//   background: rgb(0, 0, 0, 0.3);
+//   position: fixed;
+//   width: 100vw;
+//   z-index: 1000;
+//   height: 100px;
+// `;
 const NavWrap = styled.div`
   margin: 0.5rem auto;
   border-bottom: 0.1px solid #fff;
@@ -56,6 +56,7 @@ const NavWrap = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  position: fixed;
 `;
 const NavItem = styled.a`
   font-size: 0.7rem;
