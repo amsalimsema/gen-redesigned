@@ -43,8 +43,7 @@ const Logo = styled.div`
   margin-top: 0.3rem;
 `;
 const Top = styled.div`
-  // background: rgba(0, 0, 0, 0.5);
-  // width: 100vw;
+  height: 80px;
 `;
 const NavWrap = styled.div`
   margin: 0.5rem auto;
