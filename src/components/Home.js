@@ -1,6 +1,5 @@
 import React from 'react';
 import Faq from './Faq';
-import Footer from './Footer';
 import Landing from './Landing';
 import Make from './Make';
 import Product from './Product';
@@ -21,10 +20,7 @@ export default function Home() {
       <div id='faq'>
         <Faq />
       </div>
-      <div id='contact'>
-        <Subscribe />
-        <Footer />
-      </div>
+      <Subscribe />
     </>
   );
 }

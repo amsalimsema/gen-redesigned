@@ -7,7 +7,7 @@ export default function Nav() {
   // change bg
   const [MobileNav, setMobileNav] = useState(false);
   const changebackground = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 100) {
       setMobileNav(true);
     } else {
       setMobileNav(false);

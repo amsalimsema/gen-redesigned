@@ -18,16 +18,12 @@ const Wrap = styled(Container)`
   }
 `;
 const WrapInner = styled.div`
-  //   @media only screen and (max-width: 600px) {
-  //     position: absolute;
-  //     top: 8%;
-  //     transform: translateY(8%);
-  //   }
-  //   @media only screen and (min-width: 601px) {
-  //     position: absolute;
-  //     top: 20%;
-  //     transform: translateY(20%);
-  //   }
+  @media only screen and (max-width: 600px) {
+    padding-top: 70px;
+  }
+  @media only screen and (min-width: 601px) {
+    padding-top: 80px;
+  }
 `;
 const ImgOne = styled.div`
   display: flex;

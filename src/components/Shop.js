@@ -8,8 +8,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import monitor from '../images/monitor.jpg';
 import logo from '../images/logo.png';
-import Footer from './Footer';
-import Subscribe from './Subscribe';
 
 export default function Shop() {
   // form validation
@@ -163,10 +161,6 @@ export default function Shop() {
           </Col>
         </Row>
       </FormBox>
-      <div id='contact'>
-        <Subscribe />
-        <Footer />
-      </div>
     </>
   );
 }

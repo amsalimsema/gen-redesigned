@@ -6,9 +6,12 @@ import Container from 'react-bootstrap/Container';
 
 const FaqWrap = styled(Container)`
   width: 75vw;
-  margin: 5rem auto;
   @media only screen and (max-width: 600px) {
     width: 90vw;
+    padding-top: 100px;
+  }
+  @media only screen and (min-width: 600px) {
+    padding-top: 100px;
   }
 `;
 const Title = styled.div`

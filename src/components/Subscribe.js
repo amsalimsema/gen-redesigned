@@ -48,7 +48,7 @@ export default function Subscribe() {
           name='newsletter'
           method='POST'
           data-netlify='true'
-          action='/#contact/?success=true'
+          action='/?success=true'
           id='newsletter_js'
           autoComplete='true'
         >
