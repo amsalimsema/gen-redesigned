@@ -10,7 +10,9 @@ import Why from './Why';
 export default function Home() {
   return (
     <>
-      <Landing />
+      <div id='landing'>
+        <Landing />
+      </div>
       <Why />
       <div id='products'>
         <Product />

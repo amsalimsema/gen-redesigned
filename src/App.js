@@ -17,9 +17,8 @@ function App() {
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/shop' component={Shop}></Route>
         </Switch>
-        <div id='contact'>
-          <Footer />
-        </div>
+
+        <Footer />
       </Router>
     </>
   );
