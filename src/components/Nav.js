@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../images/logo.png';
 import '../App.css';
@@ -26,7 +27,7 @@ export default function Nav() {
           <NavWrap>
             <NavItem href='/#products'>PRODUCTS</NavItem>
             <NavItem href='/#faq'>FAQs</NavItem>
-            <NavItem href='/shop'>SHOP</NavItem>
+            <NavLink to='/shop'>SHOP</NavLink>
             <NavItem href='/#faq'>TALK TO US</NavItem>
           </NavWrap>
         </Top>
@@ -53,6 +54,17 @@ const NavWrap = styled.div`
   align-items: center;
 `;
 const NavItem = styled.a`
+  font-size: 0.7rem;
+  color: #fff;
+  margin: 0.5rem 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+`;
+const NavLink = styled(Link)`
   font-size: 0.7rem;
   color: #fff;
   margin: 0.5rem 0.5rem;
