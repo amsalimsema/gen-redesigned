@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../images/logo.png';
 import '../App.css';
+import { motion } from 'framer-motion';
 
 export default function Nav() {
   // change bg
@@ -19,17 +20,27 @@ export default function Nav() {
     <>
       <div className={MobileNav ? 'MobileNav active' : 'MobileNav'}>
         <Top>
-          <Logo>
-            <NavItem href='/#landing'>
-              <img src={logo} alt='logo' style={{ width: '50px' }} />
-            </NavItem>
-          </Logo>
-          <NavWrap>
-            <NavItem href='/#products'>PRODUCTS</NavItem>
-            <NavItem href='/#faq'>FAQs</NavItem>
-            <NavLink to='/shop'>SHOP</NavLink>
-            <NavItem href='/#faq'>TALK TO US</NavItem>
-          </NavWrap>
+          <motion.div
+            initial={{ x: -1000 }}
+            animate={{ x: 0 }}
+            transition={{
+              type: 'tween',
+              duration: '2',
+              delay: '1',
+            }}
+          >
+            <Logo>
+              <NavItem href='/#landing'>
+                <img src={logo} alt='logo' style={{ width: '50px' }} />
+              </NavItem>
+            </Logo>
+            <NavWrap>
+              <NavItem href='/#products'>PRODUCTS</NavItem>
+              <NavItem href='/#faq'>FAQs</NavItem>
+              <NavLink to='/shop'>SHOP</NavLink>
+              <NavItem href='/#faq'>TALK TO US</NavItem>
+            </NavWrap>
+          </motion.div>
         </Top>
       </div>
     </>
