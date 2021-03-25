@@ -71,7 +71,7 @@ const NavItem = styled.a`
   font-weight: bold;
   text-decoration: none;
   &:hover {
-    color: black;
+    color: green;
     text-decoration: none;
   }
 `;
@@ -82,7 +82,7 @@ const NavLink = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   &:hover {
-    color: black;
+    color: green;
     text-decoration: none;
   }
 `;

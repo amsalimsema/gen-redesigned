@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import HomeHero from '../images/HomeHero.jpg';
+//import HomeMob from '../images/HomeMob.jpg';
 
 const LandingBg = styled.div`
   background-color: rgb(0, 0, 0, 0.3);
